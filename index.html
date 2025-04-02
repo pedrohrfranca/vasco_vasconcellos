@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">   
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+    <title>Vascos Vasconcellos</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="images/logo-VV.png" alt="Logo da VV" class="logo">
+        </div>
+        <div class="title-container">
+            <h1>Bem-vindo a Loja Virtual da VV</h1>
+        </div>
+        <nav>
+            <span id="hamburguer" onclick="clickMenu()" class="material-symbols-outlined">
+                menu
+                </span>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- HERO -->
+    <div class="hero-container">
+        <div class="hero-text">
+            <h2>“Usamos a essência da alfaiataria tradicional aliada ao desenho de uma roupa extremamente moderna” 
+                <i>Vasco Vasconcellos</i></h2>
+            <p>Moda e Acessórios Exclusivos</p>
+        </div>
+    </div>
+    <!-- Segunda sessão Imagens. -->
+    <div class="imagens-segunda-sessao">
+        <img src="images/vasco 01.png" alt="Vasco alfaiataria" class="imagem-1">
+        <img src="images/vasco-sobmedida.png" alt="vasco-sobmedida" class="imagem-2">
+    </div>
+
+
+    <!-- terceira sessão Imagens. -->
+    <div class="terceira-sessao-conteiner"></div>
+
+    <!-- quarta sessão Imagens. -->
+    <form>Ganhe 10% de Desconto na Primeira Compra<br>
+        <Label for="name">Seu Nome</Label>
+        <input id="name" type="text" placeholder="Nome" required>
+        <br>
+        <Label for="email">Seu Email</Label>
+        <input id="email" type="email" placeholder="Email" required>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+
+    <script src="main.js"></script>
+</body>
+</html>

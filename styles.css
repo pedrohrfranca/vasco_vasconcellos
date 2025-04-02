@@ -1,0 +1,192 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*HEADER*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+    text-decoration: none;
+    padding: 0px 100px;
+    background-color: #10265A;
+    color: white;
+}
+
+.logo-container {
+    img {
+        width: 5rem;
+        height: 5rem;
+    }
+}
+
+.title-container {
+    align-items: center;
+    margin-left: 150px;
+    
+}
+
+.header h1{
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: white;
+}
+
+
+.header a {
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.menu {
+    display: flex;
+    gap: 40px;
+}
+
+#hamburguer {   
+    display: none;
+    cursor: pointer;
+}
+
+.menu li {
+    list-style: none;
+    color: white;
+    font-size: 18px;
+}
+
+/* HERO */
+
+.hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-image: url(images/hero\ vv.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-text {
+    color: white;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    line-height: 2.2em;
+    font-size: 1.5rem;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;   
+    font-weight: 700;
+    text-align: center;
+    padding: 0px 20px;
+}
+
+
+/* segunda sessão */
+
+.imagens-segunda-sessao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    gap: 80px;
+}
+
+.imagem-1, .imagem-2 {
+    border-radius: 160px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Terceira sessão */
+.terceira-sessao-conteiner {
+    background-image: url(images/socios-da-alfaiataria-vasco-vasconcellos%201.png);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px 0px 0px;
+}
+
+
+/* Mobile Version */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .header h1{
+        font-size: 20px;
+        padding: 0px 20px;
+    }
+
+    .title-container {
+        align-items: center;
+        margin-left: 0px;
+    }
+
+    #hamburguer {
+        display: block;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+    .menu {
+        display: none;
+    }
+    
+    .menu li {
+        align-items: center;
+        margin-right: 50px;
+        padding: 10px;
+    }
+
+    .hero-container {
+        height: auto;
+        padding: 20px;
+    }
+
+    .hero-text {
+        font-size: 1rem;
+        padding: 0.2rem;
+    }
+    .hero-text h2 {
+        font-size: 1.7rem;
+        text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7), 0 0 10px rgba(255, 255, 255, 0.5);
+        background-color: rgba(0, 0, 0, 0.3);
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .imagens-segunda-sessao {
+        flex-direction: column;
+        padding: 50px;
+        gap: 20px;
+    }
+
+    .imagem-1, .imagem-2 {
+        width: 120%;
+        height: auto;
+        background-size: cover;
+        background-position: center;
+        border-radius: 110px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .terceira-sessao-conteiner {
+        background-image: url(images/socios-da-alfaiataria-vasco-vasconcellos%201.png);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 30vh;
+    }
+}
