@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="produtos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Produtos - Vasco Vasconcellos</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="images/logo-VV.png" alt="Logo da VV" class="logo">
+        </div>
+        <div class="title-container">
+            <h2>10% OFF na Primeira Compra</h2>
+            <h2>Troca grátis em até 30 dias</h2>
+            <h2>Alfaiataria Premium</h2>
+        </div>
+        <span id="hamburguer" onclick="clickMenu()" class="material-icons">
+            menu
+        </span>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <main class="produtos-container">
+        <section class="banner-principal">
+            <h1>Nossa Coleção Premium</h1>
+            <p>Trajes sob medida para homens que valorizam elegância e qualidade</p>
+        </section>
+
+        <section class="categorias">
+            <h2>Categorias</h2>
+            <div class="categorias-grid">
+                <div class="categoria-card">
+                    <img src="images/trajes.jpg" alt="Trajes">
+                    <h3>Trajes</h3>
+                </div>
+                <div class="categoria-card">
+                    <img src="images/camisas.jpg" alt="Camisas">
+                    <h3>Camisas</h3>
+                </div>
+                <div class="categoria-card">
+                    <img src="images/calcas.jpg" alt="Calças">
+                    <h3>Calças</h3>
+                </div>
+                <div class="categoria-card">
+                    <img src="images/ternos.jpg" alt="Ternos">
+                    <h3>Ternos</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="destaques">
+            <h2>Destaques da Temporada</h2>
+            <div class="produtos-grid">
+                <div class="produto-card">
+                    <img src="images/terno-premium.jpg" alt="Terno Premium">
+                    <h3>Terno Premium</h3>
+                    <p>Terno em lã super 120s, feito sob medida</p>
+                    <span class="preco">R$ 2.999,00</span>
+                    <button class="btn-detalhes">Ver Detalhes</button>
+                </div>
+                <div class="produto-card">
+                    <img src="images/camisa-premium.jpg" alt="Camisa Premium">
+                    <h3>Camisa Premium</h3>
+                    <p>Camisa em algodão egípcio, 100% algodão</p>
+                    <span class="preco">R$ 499,00</span>
+                    <button class="btn-detalhes">Ver Detalhes</button>
+                </div>
+                <div class="produto-card">
+                    <img src="images/calca-premium.jpg" alt="Calça Premium">
+                    <h3>Calça Premium</h3>
+                    <p>Calça em lã merino, corte moderno</p>
+                    <span class="preco">R$ 799,00</span>
+                    <button class="btn-detalhes">Ver Detalhes</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="beneficios">
+            <h2>Nossos Benefícios</h2>
+            <div class="beneficios-grid">
+                <div class="beneficio-card">
+                    <span class="material-icons">style</span>
+                    <h3>Alfaiataria Sob Medida</h3>
+                    <p>Peças feitas exclusivamente para você</p>
+                </div>
+                <div class="beneficio-card">
+                    <span class="material-icons">local_shipping</span>
+                    <h3>Entrega Expressa</h3>
+                    <p>Entrega em até 7 dias úteis</p>
+                </div>
+                <div class="beneficio-card">
+                    <span class="material-icons">support_agent</span>
+                    <h3>Atendimento Personalizado</h3>
+                    <p>Consultoria de estilo exclusiva</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <p>Rua Augusta, 1234 - São Paulo</p>
+                <p>Tel: (11) 1234-5678</p>
+                <p>Email: contato@vascovasconcellos.com.br</p>
+            </div>
+            <div class="footer-section">
+                <h3>Horário de Funcionamento</h3>
+                <p>Segunda a Sexta: 9h às 18h</p>
+                <p>Sábado: 9h às 13h</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Vasco Vasconcellos - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script src="produtos.js"></script>
+</body>
+</html>

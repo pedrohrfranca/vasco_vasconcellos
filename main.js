@@ -1,14 +1,11 @@
 
-// Essa função 
-function clickMenu() {
-    const menu = document.querySelector(".menu");
-    if (window.innerWidth <= 768) { // Certifique-se de que a lógica só afeta dispositivos móveis
-        if (menu.style.display === "block") {
-            menu.style.display = "none";
-        } else {
-            menu.style.display = "block";
-        }
-    } else {
-        menu.style.display = ""; // Restaura o estilo padrão no desktop
+// JavaScript to toggle the active class for the h2 element
+document.addEventListener("DOMContentLoaded", () => {
+    const titleContainer = document.querySelector(".title-container h2");
+    if (titleContainer) {
+        // Add the active class after a delay to trigger the animation
+        setTimeout(() => {
+            titleContainer.classList.add("active");
+        }, 500); // Adjust the delay as needed
     }
-}
+});

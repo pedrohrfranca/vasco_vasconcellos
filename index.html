@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">   
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Vascos Vasconcellos</title>
 </head>
 <body>
@@ -15,10 +16,10 @@
         <div class="title-container">
             <h1>Bem-vindo a Loja Virtual da VV</h1>
         </div>
+        <span id="hamburguer" onclick="clickMenu()" class="material-icons">
+            menu
+        </span>
         <nav>
-            <span id="hamburguer" onclick="clickMenu()" class="material-symbols-outlined">
-                menu
-                </span>
             <ul class="menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="produtos.html">Produtos</a></li>
@@ -123,5 +124,24 @@
         </div>
     </footer>        
     <script src="main.js"></script>
+    <script src="produtos.js" defer></script>
+    <script>
+        function clickMenu() {
+            const menu = document.querySelector('.menu');
+            if (menu) {
+                menu.classList.toggle('active');
+            }
+        }
+
+        // Adiciona evento de clique fora do menu para fechá-lo
+        document.addEventListener('click', function(event) {
+            const menu = document.querySelector('.menu');
+            const hamburguer = document.getElementById('hamburguer');
+            
+            if (menu && hamburguer && !menu.contains(event.target) && !hamburguer.contains(event.target)) {
+                menu.classList.remove('active');
+            }
+        });
+    </script>
 </body>
 </html>
