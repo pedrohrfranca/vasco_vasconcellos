@@ -85,10 +85,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
-    background-image: url(images/hero\ vv.png);
+    height: 700px;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/hero\ vv.png);
     background-size: cover;
     background-position: center;
+    position: relative;
+    overflow: hidden;
 }
 
 .hero-text {
@@ -99,6 +101,8 @@ body {
     font-size: 1.5rem;
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 2;
 }
 
 .hero-text h2 {
@@ -107,8 +111,23 @@ body {
     font-weight: 700;
     text-align: center;
     padding: 0px 20px;
+    animation: fadeInUp 1s ease-out;
 }
 
+.hero-text p {
+    animation: fadeInUp 1s ease-out 0.5s both;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 /* segunda sessão */
 
@@ -409,7 +428,7 @@ a {
         flex-direction: column;
         gap: 1rem;
         padding: 1rem 0;
-        background-color: #10265A;
+        background-color: #10265A !important;
         position: absolute;
         top: 100%;
         left: 0;
@@ -417,8 +436,8 @@ a {
     }
 
     .menu.active {
-        display: flex;
-        flex-direction: row;
+        display: flex !important;
+        flex-direction: row !important;
         justify-content: center;
         gap: 3rem;
         background-color: #10265A;
